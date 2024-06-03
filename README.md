@@ -13,7 +13,7 @@ Please directly refer to `Table 13` in [Ananna et al. 2017](https://iopscience.i
 - `REDSHIFT_FINAL`: Equals to column `REDSHIFT` (spectrospic redshift from [Ananna et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa937d)) if available. Otherwise, it equals to column `PHOTOZ` (photometric redshift from [Ananna et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa937d)). Unless otherwise specified, `REDSHIFT_FINAL` is the redshift ($z$) we used throughout the paper.
 - `LUMINOSITY_FINAL`: Equals to column `LUMINOSITY_SPEC` (full band X-ray luminosity calculated using `REDSHIFT` in [Ananna et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa937d)) if available. Otherwise, it equals to column `LUMINOSITY_PHOT` (full band X-ray luminosity calculated using `PHOTOZ` in [Ananna et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa937d)). Unless otherwise specified, `LUMINOSITY_FINAL` is the X-ray luminosity ($L_x$) we used throughout the paper.
 
-### Columns from HSC DR3 table ([pdr3_wide.forced](https://hsc-release.mtk.nao.ac.jp/schema/#pdr3.pdr3_wide.forced))
+### Columns from HSC DR3 table [pdr3_wide.forced](https://hsc-release.mtk.nao.ac.jp/schema/#pdr3.pdr3_wide.forced)
 - `object_id`: Unique ID in 64bit integer. Be careful not to have it converted to a 32bit integer or 64bit floating point.
 - `ra`: RA (J2000.0) of the object (in degree)
 - `dec`: DEC (J2000.0) of the object (in degree)
@@ -23,3 +23,7 @@ Please directly refer to `Table 13` in [Ananna et al. 2017](https://iopscience.i
 - `(g|r|i|z|y)_cmodel_magerr`: flux uncertainty from the final cmodel fit (in mag)
 - `(g|r|i|z|y)_extendedness_value`: Set to 1 for extended sources, 0 for point sources. See [this page](https://hsc-release.mtk.nao.ac.jp/doc/index.php/star-galaxy-separation__pdr3/) for details.
 
+### Columns from cross-matching [Ananna et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa937d) with [pdr3_wide.forced](https://hsc-release.mtk.nao.ac.jp/schema/#pdr3.pdr3_wide.forced)
+- `Separation`: Distance between position `CTP_RA`, `CTP_DEC` (from [Ananna et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa937d)) and position `ra`, `dec` (from [pdr3_wide.forced](https://hsc-release.mtk.nao.ac.jp/schema/#pdr3.pdr3_wide.forced), described above) (in degree)
+- `match_by_mag`: Which band(s) is(are) used in cross-matching. For instance, `g` means that we have used column `G` from [Ananna et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa937d) and column `g_cmodel_mag` from [pdr3_wide.forced](https://hsc-release.mtk.nao.ac.jp/schema/#pdr3.pdr3_wide.forced) in cross-matching, together with the positional information.
+- `file_name`: File name of the image. Only used internally. 
