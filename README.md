@@ -28,5 +28,28 @@ Please directly refer to `Table 13` in [Ananna et al. 2017](https://iopscience.i
 - `match_by_mag`: Which band(s) is(are) used in cross-matching. For instance, `g` means that we have used column `G` from [Ananna et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa937d) and column `g_cmodel_mag` from [pdr3_wide.forced](https://hsc-release.mtk.nao.ac.jp/schema/#pdr3.pdr3_wide.forced) in cross-matching, together with the positional information.
 - `file_name`: File name of the image. Only used internally. 
 
-### Columns from [PSFGAN](https://academic.oup.com/mnras/article/477/2/2513/4951616)
+### Columns from running [PSFGAN](https://academic.oup.com/mnras/article/477/2/2513/4951616)
 - `contrast_ratio`: After separating the AGN point source and the host galaxy, we calculated the AGN-to-host galaxy flux contrast ratio (in the corresponding band, depending on the redshift --- see `Table 1` in the paper).
+
+### Columns from running [GaMPEN](https://ghosharitra.com/gampen.html)
+Here we use $R_e$ (effective radius) as an example. Cases are similar for other morphological parameters. Note that this information is valid for the corresponding band only (depending on the redshift --- see `Table 1` in the paper).
+- `preds_R_e_asec_mean`: Mean of `GaMPEN` predicted distribution for parameter $R_e$ (in arcsec --- the same unit is used for other $R_e$ columns)
+- `preds_R_e_asec_median`: Median of `GaMPEN` predicted distribution for parameter $R_e$ 
+- `preds_R_e_asec_std`: Standard deviation  of `GaMPEN` predicted distribution for parameter $R_e$ 
+- `preds_R_e_asec_skew`: Skewness of `GaMPEN` predicted distribution for parameter $R_e$ 
+- `preds_R_e_asec_kurtosis`: Kurtosis of `GaMPEN` predicted distribution for parameter $R_e$ 
+- `preds_R_e_asec_mode`: Mode of `GaMPEN` predicted distribution for parameter $R_e$ (i.e., the most probable value of $R_e$ in the entire predicted distribution)
+- `preds_R_e_asec_sig_ci`: Lower and upper bounds for the 1 $\sigma$ confidence interval for parameter $R_e$
+- `preds_R_e_asec_twosig_ci`: Lower and upper bounds for the 2 $\sigma$ confidence interval for parameter $R_e$
+- `preds_R_e_asec_threesig_ci`: Lower and upper bounds for the 3 $\sigma$ confidence interval for parameter $R_e$
+Note for other morphological parameters, units are different. For instance, total flux is in ADU (analog-to-digital units) while the bulge-to-total ratio (`bt`) is unitless.
+
+
+
+
+
+
+
+
+
+
