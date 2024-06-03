@@ -42,6 +42,7 @@ Here we use $R_e$ (effective radius) as an example. Cases are similar for other 
 - `preds_R_e_asec_sig_ci`: Lower and upper bounds for the 1 $\sigma$ confidence interval for parameter $R_e$
 - `preds_R_e_asec_twosig_ci`: Lower and upper bounds for the 2 $\sigma$ confidence interval for parameter $R_e$
 - `preds_R_e_asec_threesig_ci`: Lower and upper bounds for the 3 $\sigma$ confidence interval for parameter $R_e$
+
 Note for other morphological parameters, units are different. For instance, total flux is in ADU (analog-to-digital units) while the bulge-to-total ratio (`bt`) is unitless.
 
 
