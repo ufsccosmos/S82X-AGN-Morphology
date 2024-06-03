@@ -27,3 +27,6 @@ Please directly refer to `Table 13` in [Ananna et al. 2017](https://iopscience.i
 - `Separation`: Distance between position `CTP_RA`, `CTP_DEC` (from [Ananna et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa937d)) and position `ra`, `dec` (from [pdr3_wide.forced](https://hsc-release.mtk.nao.ac.jp/schema/#pdr3.pdr3_wide.forced), described above) (in degree)
 - `match_by_mag`: Which band(s) is(are) used in cross-matching. For instance, `g` means that we have used column `G` from [Ananna et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa937d) and column `g_cmodel_mag` from [pdr3_wide.forced](https://hsc-release.mtk.nao.ac.jp/schema/#pdr3.pdr3_wide.forced) in cross-matching, together with the positional information.
 - `file_name`: File name of the image. Only used internally. 
+
+### Columns from [PSFGAN](https://academic.oup.com/mnras/article/477/2/2513/4951616)
+- `contrast_ratio`: After separating the AGN point source and the host galaxy, we calculated the AGN-to-host galaxy flux contrast ratio (in the corresponding band, depending on the redshift --- see `Table 1` in the paper).
