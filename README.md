@@ -14,4 +14,12 @@ Please directly refer to `Table 13` in [Ananna et al. 2017](https://iopscience.i
 - `LUMINOSITY_FINAL`: Equals to column `LUMINOSITY_SPEC` (full band X-ray luminosity calculated using `REDSHIFT` in [Ananna et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa937d)) if available. Otherwise, it equals to column `LUMINOSITY_PHOT` (full band X-ray luminosity calculated using `PHOTOZ` in [Ananna et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa937d)). Unless otherwise specified, `LUMINOSITY_FINAL` is the X-ray luminosity ($L_x$) we used throughout the paper.
 
 ### Columns from HSC DR3 table ([pdr3_wide.forced](https://hsc-release.mtk.nao.ac.jp/schema/#pdr3.pdr3_wide.forced))
+- `object_id`: Unique ID in 64bit integer. Be careful not to have it converted to a 32bit integer or 64bit floating point.
+- `ra`: RA (J2000.0) of the object (in degree)
+- `dec`: DEC (J2000.0) of the object (in degree)
+- `tract`: Tract ID. 
+- `patch`: Patch name as an integer.
+- `(g|r|i|z|y)_cmodel_mag`: flux from the final cmodel fit (in mag)
+- `(g|r|i|z|y)_cmodel_magerr`: flux uncertainty from the final cmodel fit (in mag)
+- `(g|r|i|z|y)_extendedness_value`: Set to 1 for extended sources, 0 for point sources. See [this page](https://hsc-release.mtk.nao.ac.jp/doc/index.php/star-galaxy-separation__pdr3/) for details.
 
