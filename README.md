@@ -45,7 +45,14 @@ Here we use $R_e$ (effective radius) as an example. Cases are similar for other 
 
 Note for other morphological parameters, units are different. For instance, total flux is in ADU (analog-to-digital units) while the bulge-to-total ratio (`bt`) is unitless.
 
-
+### Columns from [pdr3_wide.photoz_demp](https://hsc-release.mtk.nao.ac.jp/schema/#pdr3.pdr3_wide.photoz_demp)
+- `stellar_mass_DEmP`: Mode stellar mass derived from P(M*), in the unit of solar mass in log scale [Msun]
+- `stellar_mass_err68_min_DEmP`: 16% percentile in the P(M*) [Msun]
+- `stellar_mass_err68_max_DEmP`: 84% percentile in the P(M*) [Msun]
+- `sfr_DEmP`: Mode star formation rate derived from P(SFR), in the unit of solar mass per year in log scale. [Msun/yr]
+- `sfr_err68_min_DEmP`: 16% percentile in the P(SFR) [Msun/yr]
+- `sfr_err68_max_DEmP`: 84% percentile in the P(SFR) [Msun/yr]
+- `ssfr_DEmP`: Specific star formation rate (sSFR) calculated using `stellar_mass_DEmP` and `sfr_DEmP` [/yr]
 
 
 
