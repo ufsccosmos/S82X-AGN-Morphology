@@ -62,6 +62,10 @@ Note for other morphological parameters, units are different. For instance, tota
 - `sfr_err68_min_mizuki`: Lower bound of the 68% confidence interval of star formation rate [Msun/yr]
 - `sfr_err68_max_mizuki`: Upper bound of the 68% confidence interval of star formation rate [Msun/yr]
 - `ssfr_mizuki`: Specific star formation rate (sSFR) calculated using `stellar_mass_mizuki` and `sfr_mizuki` [/yr]
+- `rest_galex_(fuv|nuv)_mag`: Rest-frame GALEX (FUV|NUV) magnitude [mag]
+- `rest_sdss_(u|g|r|i|z)_mag`: Rest-frame SDSS (u|g|r|i|z)-band magnitude [mag]
+- `rest_hsc_(g|r|i|z|y)_mag`: Rest-frame HSC (g|r|i|z|y)-band magnitude [mag]
+- `rest_wfcam_(y|j|h|k)_mag`: Rest-frame WFCAM (Y|J|H|K)-band magnitude [mag]
   
 
 
