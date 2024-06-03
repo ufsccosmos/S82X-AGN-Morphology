@@ -54,6 +54,16 @@ Note for other morphological parameters, units are different. For instance, tota
 - `sfr_err68_max_DEmP`: 84% percentile in the P(SFR) [Msun/yr]
 - `ssfr_DEmP`: Specific star formation rate (sSFR) calculated using `stellar_mass_DEmP` and `sfr_DEmP` [/yr]
 
+### Columns from [pdr3_wide.photoz_mizuki](https://hsc-release.mtk.nao.ac.jp/schema/#pdr3.pdr3_wide.photoz_mizuki)
+- `stellar_mass_mizuki`: Median stellar mass [Msun]
+- `stellar_mass_err68_min_mizuki`: Lower bound of the 68% confidence interval of stellar_mass [Msun]
+- `stellar_mass_err68_max_mizuki`: Upper bound of the 68% confidence interval of stellar_mass [Msun]
+- `sfr_mizuki`: Median star formation rate [Msun/yr]
+- `sfr_err68_min_mizuki`: Lower bound of the 68% confidence interval of star formation rate [Msun/yr]
+- `sfr_err68_max_mizuki`: Upper bound of the 68% confidence interval of star formation rate [Msun/yr]
+- `ssfr_mizuki`: Specific star formation rate (sSFR) calculated using `stellar_mass_mizuki` and `sfr_mizuki` [/yr]
+  
+
 
 
 
