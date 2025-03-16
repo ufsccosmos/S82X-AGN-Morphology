@@ -6,7 +6,9 @@ This repository contains the full catalog of 1,116 Stripe 82X AGNs, along with d
 File `S82X_HSC3_z_0_1_GaMPEN_1116_AGN.fits` contains the full catalog. We recommend using an appropriate software, such as [TOPCAT](https://www.star.bris.ac.uk/mbt/topcat/), to access its contents.
 
 ## Citation Information
-If you use our data in your publication, please reference `the paper` at (Link). (Under Construction --- paper link will be updated after the reviewing process is completed)
+If you use our data in your publication, please reference `the paper` at (Link). 
+(Under Construction --- paper link will be updated after the reviewing process is completed)
+
 ## Column Description
 Below we provide a comprehensive description for each column contained in the catalog.
 
