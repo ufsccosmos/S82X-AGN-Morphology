@@ -36,7 +36,7 @@ Please directly refer to `Table 13` in [Ananna et al. 2017](https://iopscience.i
 - `contrast_ratio`: After separating the AGN point source and the host galaxy, we calculated the AGN-to-host galaxy flux contrast ratio (in the corresponding band, depending on the redshift --- see `Table 1` in the paper).
 
 ### Columns from running [GaMPEN](https://ghosharitra.com/gampen.html)
-Here we use $R_e$ (effective radius) as an example. Cases are similar for other structural parameters. Since we are using PSFGAN outputs as GaMPEN inputs, all three structural parameters from GaMPEN outputs refer to the PSFGAN-recovered host galaxy only, not the entire AGN PS + host galaxy. Note that this information is valid for the corresponding band only (depending on the redshift --- see `Table 1` in the paper).
+Here we use $R_e$ (effective radius) as an example. Cases are similar for other structural parameters. Since we are using `PSFGAN` outputs as `GaMPEN` inputs, all three structural parameters from `GaMPEN` outputs refer to the `PSFGAN` recovered host galaxy only, not the entire AGN PS + host galaxy. Note that this information is valid for the corresponding band only (depending on the redshift --- see `Table 1` in the paper).
 - `preds_R_e_asec_mean`: Mean of `GaMPEN` predicted distribution for parameter $R_e$ (in arcsec --- the same unit is used for other $R_e$ columns)
 - `preds_R_e_asec_median`: Median of `GaMPEN` predicted distribution for parameter $R_e$ 
 - `preds_R_e_asec_std`: Standard deviation  of `GaMPEN` predicted distribution for parameter $R_e$ 
