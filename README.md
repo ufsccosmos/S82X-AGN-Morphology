@@ -28,7 +28,7 @@ Please directly refer to `Table 13` in [Ananna et al. 2017](https://iopscience.i
 - `(g|r|i|z|y)_extendedness_value`: Set to 1 for extended sources, 0 for point sources. See [this page](https://hsc-release.mtk.nao.ac.jp/doc/index.php/star-galaxy-separation__pdr3/) for details.
 
 ### Columns from cross-matching [Ananna et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa937d) with [pdr3_wide.forced](https://hsc-release.mtk.nao.ac.jp/schema/#pdr3.pdr3_wide.forced)
-- `Separation`: Distance between position `CTP_RA, CTP_DEC` (from [Ananna et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa937d)) and position `ra, dec` (from [pdr3_wide.forced](https://hsc-release.mtk.nao.ac.jp/schema/#pdr3.pdr3_wide.forced), described above) (in degree)
+- `positional_distance`: Distance between position `CTP_RA, CTP_DEC` (from [Ananna et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa937d)) and position `ra, dec` (from [pdr3_wide.forced](https://hsc-release.mtk.nao.ac.jp/schema/#pdr3.pdr3_wide.forced), described above) (in arcseconds)
 - `match_by_mag`: Which band(s) is(are) used in cross-matching. For instance, `g` means that we have used column `G` from [Ananna et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa937d) and column `g_cmodel_mag` from [pdr3_wide.forced](https://hsc-release.mtk.nao.ac.jp/schema/#pdr3.pdr3_wide.forced) in cross-matching, together with the positional information.
 - `file_name`: File name of the image. Only used internally. 
 
